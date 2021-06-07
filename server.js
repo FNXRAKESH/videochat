@@ -8,7 +8,7 @@ const io = require("socket.io")(server, {
 		methods: [ "GET", "POST" ]
 	}
 })
-app.get(“/”, (req, res) => {
+app.get("/", (req, res) => {
     res.status(200).send(“Hello World”);
 });
 io.on("connection", (socket) => {
